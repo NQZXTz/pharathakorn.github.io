@@ -1,0 +1,39 @@
+h1{
+    color: red;
+}
+h2{
+    text-align: right;
+    color: green;
+}
+h3{
+    text-align: center;
+    color: blue;
+}
+h4{
+    text-align: center;
+    color:blue
+}
+p.one{
+    border-style: solid;
+    border-color: royalblue;
+    text-align: left;
+    color:turquoise;
+    font-style: italic;
+    border: 2px solid royalblue;
+}
+p.two{
+    border-style: dotted;
+    border-color:coral;
+    text-align: center;
+    color:olive;
+    font-weight: bold;
+    border: 3px dotted coral;
+}
+p.three{
+    border-style: dashed;
+    border-color:yellow;
+    text-align: right;
+    color:darkmagenta ;
+    font-size: large;
+    border: 4px dashed yellow;
+}

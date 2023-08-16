@@ -1,0 +1,40 @@
+ul.None{ 
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+}
+
+ul.None li{
+    display: block ;
+    color: aliceblue;
+    float: left;
+    padding: 20px 16px;
+}
+
+ul.None li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+ul.None li:active {
+    background-color: purple;
+    color: white;
+}
+
+p a{
+    border: 5px solid blue;
+    background-color: skyblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+p z{
+    border: 5px solid green;
+    background-color: lightgreen;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}

@@ -1,0 +1,9 @@
+h1{
+    margin: auto;
+    width: 300px;
+}
+p{
+    background-color: lightyellow;
+    padding:25px 50px;
+    border:10px solid green;
+}
