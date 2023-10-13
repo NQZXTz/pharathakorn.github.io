@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GitHub User Info</title>
+    <style>
+        #avatar {
+            border: 5px solid blue;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <a href="https://github.com/NQZXTz" target="_blank">Pharathakorn Wongsawangsiri</a>
+        <br>
+        <a href="https://github.com/NQZXTz" target="_blank">
+            <img id="avatar" src="Katang.jpg" alt="avatar">
+        </a>
+    </div>
+
+    <script>
+        var username = "NQZXTz"; // Replace with your GitHub username
+
+        // Fetch GitHub user data
+        fetch('https://api.github.com/users/${username}')
+            .then(response => response.json())
+            .then(data => {
+                // Display user name
+                var nameElement = document.getElementsByTagName("h1")[0].firstChild;
+                nameElement.textContent = data.name;
+
+                // Create a link to the GitHub profile
+                var githubLink = document.getElementsByTagName("h1")[0].firstChild;
+                githubLink.href = data.html_url;
+                githubLink.textContent = data.html_url;
+
+                // Display user avatar
+                var avatarElement = document.getElementById("avatar");
+                avatarElement.src = data.avatar_url;
+
+                // Open GitHub profile in a new tab when clicking the name
+                nameElement.addEventListener("click", function () {
+                    window.open(data.html_url, "_blank");
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
